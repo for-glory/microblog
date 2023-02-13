@@ -7,7 +7,9 @@
         <tr>
             <td>
                 <br>
-                <span id="post1">This is my one and only blog post. Can you add more using a for loop?</span>
+                {% for post in posts %}
+                    <div>{{ post.body }}</div>
+                {% endfor %}
             </td>
         </tr>
     </table>
